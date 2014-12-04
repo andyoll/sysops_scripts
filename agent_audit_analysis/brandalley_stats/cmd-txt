@@ -1,0 +1,4 @@
+# cat ./../header_line.txt | cat - list_upload_create_20141112.csv > temp && mv temp brandalley-list_upload_create_20141112.csv
+
+for file in brandalley*; do echo $file; ../parse_csv2.py $file > out_$file; done
+
